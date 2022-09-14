@@ -45,7 +45,7 @@ class Logic {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _number = 1000;
+  int _number = 1000;  // defaults to 1000
 
   List<Widget> _displayList() {
     List<Widget> l = <Widget>[];
@@ -83,6 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     _number = int.parse(value);
                   } catch (e) {
                     print(e); // TODO log
+                    _number = 0;
                   }
                 });
               },
