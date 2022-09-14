@@ -13,8 +13,14 @@ class MyApp extends StatelessWidget {
       title: 'FizzBuzz Demo',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
+        brightness: Brightness.light
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark
+      ),
+      themeMode: ThemeMode.system,
       home: const MyHomePage(title: 'FizzBuzz Demo App'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
